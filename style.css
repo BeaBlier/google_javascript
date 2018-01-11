@@ -1,0 +1,194 @@
+body {
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+li {
+  list-style-type: none;
+  list-style-image: none;
+}
+.margin30 {
+  margin-bottom: 30px;
+}
+
+/* HEADER */
+
+header {
+  font-size: 13px;
+  padding: 0 30px;      /* marge intérieure */
+}
+
+header ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header li {
+  margin-left: 23px;
+}
+header a {
+  color: rgba(0,0,0,0.87);
+}
+header a:hover {
+  opacity: 0.85;
+}
+header a,
+header button {
+  vertical-align: middle;
+}
+
+#mosaique {
+  background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+    -webkit-background-size: 528px 68px;
+    background-size: 528px 68px;
+    background-position: -132px -38px;
+    opacity: .55;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+#mosaique:hover {   /*quand on survole */
+  opacity: 0.85;
+}
+
+#connexion {
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  outline: none;
+  background: #4285f4;
+  background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+  background: linear-gradient(top,#4387fd,#4683ea);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4387fd,endColorstr=#4683ea,GradientType=0);
+  line-height: 28px;
+  padding: 0 12px;
+  color: white;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#maintohide {
+  visibility: hidden;
+}
+
+#ola {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  padding-top: 109px;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#search {
+  height: 15px;
+  width: 530px;
+  padding: 15px;
+  font-size: 16px;
+  color: black;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  border: 1px solid #e4e4e4;
+}
+#micro {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC);
+  background-size: 24px 24px;
+  display: inline-block;
+  height: 23px;
+  width: 20px;
+  vertical-align: middle;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 1000;
+}
+
+.button {
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5 ),to(#f1f1f1 ));
+  background-image: -webkit-linear-gradient(top,#f5f5f5 ,#f1f1f1 );
+  -webkit-border-radius: 2px;
+  -webkit-user-select: none;
+  background-color: #f2f2f2 ;
+  border: 1px solid #f2f2f2 ;
+  border-radius: 2px;
+  color: #757575 ;
+  cursor: default;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 54px;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 0 5px;
+}
+.button:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+}
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+footer div {
+  border-top: 1px solid #e4e4e4;
+  padding: 15px 30px;
+}
+
+#footer-1 {
+  font-size: 15px;
+  color: rgba(0,0,0,.54);
+}
+#footer-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#footer-2 ul:first-child li {
+  margin-right: 30px;
+}
+#footer-2 ul:last-child li {
+  margin-left: 30px;
+}
+footer a {
+  color: #666;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}

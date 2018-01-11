@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Google</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Gmail</a>
+            </li>
+            <li>
+              <a href="#">Images</a>
+            </li>
+            <li>
+              <a id="mosaique" href="#"></a>
+            </li>
+            <li>
+              <button id="connexion" href="#">Connexion</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <main id="maintohide">
+      <img class="margin30" alt="Google" height="92" id="logo" src="https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="272" />
+      <form action="https://www.google.fr/search" method="get">
+        <input id="search" class="margin30" type="text" name="q" value="">
+        <div id="micro">
+        </div>
+        <div class="margin30" id="buttons">
+          <input class="button" type="submit" name="" value="Recherche Google">
+          <input class="button" type="submit" name="" value="J'ai de la chance">
+        </div>
+      </form>
+
+      <div class="">
+        Google disponible en :
+        <a href="https://www.google.fr/setprefs?sig=0_zLDsz1Wh5Yfn-M-6n9rBCwHI4OU%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiW3bG23s3YAhUsDJoKHUpHB20Q2ZgBCAg">English</a>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer-1">
+        France
+      </div>
+      <div id="footer-2">
+        <ul>
+          <li>
+            <a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwiW3bG23s3YAhUsDJoKHUpHB20QkdQCCBM&url=https%3A%2F%2Fwww.google.fr%2Fintl%2Ffr_fr%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw2uB175PdVvu_s_Oh5IRJXX">Publicité</a>
+          </li>
+          <li>
+            <a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwiW3bG23s3YAhUsDJoKHUpHB20QktQCCBQ&url=https%3A%2F%2Fwww.google.fr%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw3oBerwhZw46LsPtxWHNJJA">Entreprise</a>
+          </li>
+          <li>
+            <a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwiW3bG23s3YAhUsDJoKHUpHB20QkNQCCBU&url=https%3A%2F%2Fwww.google.fr%2Fintl%2Ffr_fr%2Fabout%2F%3Futm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw1Jwo2vO2kGpzOPWCuzWlrz">A propos</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="https://www.google.fr/intl/fr_fr/policies/privacy/?fg=1">Confidentialité</a>
+          </li>
+          <li>
+            <a href="https://www.google.fr/intl/fr_fr/policies/terms/?fg=1">Conditions</a>
+          </li>
+          <li>
+            <a href="https://www.google.fr/preferences?hl=fr">Paramètres</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <button id="ola" type="button" onclick="toggle(document.getElementById('maintohide'))">
+    AFFICHER LES ELEMENTS CENTRAUX!
+  </button>
+
+    <script src="./main.js"></script>
+    </body>
+  </html>
